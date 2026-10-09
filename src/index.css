@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+/* Very light grid with big cells and a soft glow, used behind the hero sections */
+.bg-grid {
+  background-image:
+    radial-gradient(ellipse 430px 360px at 50% 55%, rgb(249 115 22 / 0.09), transparent),
+    linear-gradient(to right, rgb(255 255 255 / 0.057) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.057) 1px, transparent 1px);
+  background-size: auto, 72px 72px, 72px 72px;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to left, #fbbf24, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-404 {
+  background-image: linear-gradient(to right, #ff8a00, #f5ac00 50%, #ff8a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
